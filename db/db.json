@@ -12,7 +12,7 @@
       "name": "Jacob",
       "email": "thornton@gmail.com",
       "children": false,
-      "permissions": true
+      "permissions": false
     },
     {
       "name": "Alex",
