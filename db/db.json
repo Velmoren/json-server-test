@@ -4,7 +4,7 @@
       "name": "Mark",
       "email": "otto@gmail.com",
       "children": true,
-      "permissions": false,
+      "permissions": true,
       "id": 1
     },
     {

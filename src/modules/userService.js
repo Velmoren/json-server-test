@@ -42,4 +42,16 @@ export class UserService {
             },
         }).then(res => res.json())
     }
+
+    getFilterUsers(filterOption) {
+        return fetch(`http://localhost:4545/users?${filterOption}=true`).then(res => res.json())
+    }
+
+    getSearchUsers(value) {
+        return fetch(`http://localhost:4545/users?${value !== '' ? `name_like=${value}` : ''}`).then(res => res.json())
+    }
+    getSortUsers(sortOption) {
+        return fetch(`http://localhost:4545/users?_sort=children&_order=${sortOption ? 'asc' : 'desc'}`).then(res => res.json())
+    }
+
 }
